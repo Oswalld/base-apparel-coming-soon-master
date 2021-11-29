@@ -14,16 +14,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
+  .wrapper {
     background-image: url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  body {
-    background-size: cover;
+    background-size: 100%;
   }
 }
 
