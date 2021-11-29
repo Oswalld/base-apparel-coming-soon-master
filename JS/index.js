@@ -8,17 +8,20 @@ const setError = () => {
     emailErrorIcon.classList.remove('hidden');
     emailErrorText.classList.remove('hidden');
 }
-const setSucces = () => {
-    emailBox.classList.remove('.error-email-box');
+const setSuccess = () => {
+    emailBox.classList.remove('error-email-box');
     emailErrorIcon.classList.add('hidden');
     emailErrorText.classList.add('hidden');
 }
 
 
 const validateEmail = (email) => {
-    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
+    return String(email)
+        .toLowerCase()
+    .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
 
 const checkEmail = () => {
     const emailValue = emailBox.value.trim();

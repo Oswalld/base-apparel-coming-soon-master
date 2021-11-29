@@ -126,6 +126,11 @@ body {
   opacity: 0.7;
 }
 
+.form-container form input:focus {
+  outline: none;
+  border: 2px solid #ce9797;
+}
+
 .form-container form button {
   display: -webkit-box;
   display: -ms-flexbox;
