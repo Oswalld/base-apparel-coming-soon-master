@@ -112,12 +112,22 @@
         }
     }
 
+    .email-valid-text{
+        text-align: left;
+        padding: 5px 1.5rem;
+
+        p{
+            color: green;
+        }
+    }
+
 }
 
 
 
 .hidden{
     visibility: hidden;
+    display: none;
 }
 
 

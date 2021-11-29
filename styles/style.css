@@ -180,8 +180,18 @@ body {
   color: #f96262;
 }
 
+.form-container .email-valid-text {
+  text-align: left;
+  padding: 5px 1.5rem;
+}
+
+.form-container .email-valid-text p {
+  color: green;
+}
+
 .hidden {
   visibility: hidden;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
